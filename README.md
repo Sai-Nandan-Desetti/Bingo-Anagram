@@ -8,7 +8,6 @@
 ## Guidelines:
 * The code should be modularized appropriately based on object oriented programming concepts.
 * This server should be multi-threaded (serving multiple clients simultaneously).
-* Exception handling ; memory optimization ; packaging.
 
 ## Services offered: 
 1. Play Bingo
