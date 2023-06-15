@@ -17,15 +17,16 @@
 ### Details:
 To run the server, in the `server` folder, run (in Windows)
 ```
-java main\Server                 
+java main\Server.java                 
 ```						
 					
 To run the client, in the `client` folder, run
 ```
-java main\Client <Host name> <port number>
+java main\Client.java <Host name> <port number>
 ```			 
-Host name and port number to be got from the person running the server side of the program.
-Eg:
+Host name (System IPv4 address) and port number to be got from the person running the server side of the program.
+	
+### Example:
 ```
 Host name:   10.0.3.160	
 port number: 1712
