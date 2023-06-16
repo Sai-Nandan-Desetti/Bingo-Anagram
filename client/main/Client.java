@@ -7,7 +7,6 @@ import java.util.*;
 
 public class Client{
 
-
        private static boolean readMessage(BufferedReader fromServer) throws IOException{
   
               String message = fromServer.readLine();              
@@ -41,12 +40,12 @@ public class Client{
               
                    BufferedReader fromSystem = new BufferedReader(new InputStreamReader(System.in));
 
-                   while(!readMessage(fromServer)){
-                                    
+                   // the only time you break from this loop is when you read "BYE!!" from the server...
+                   while(!readMessage(fromServer)){                                    
                          response = fromSystem.readLine();                                           
                          toServer.println(response);
                    } 
-              
+                   // ...which is an indication for you to close the connection with the server.
                    connectToServer.close();
               }
               

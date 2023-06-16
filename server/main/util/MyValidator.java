@@ -6,7 +6,9 @@ import main.io.*;
 import java.io.*;
 import java.util.*;
 
-
+/**
+ * My custom Validator class that defines a {@code getInteger()} to read an integer from the input stream.
+ */
 public class MyValidator{
 
        MyBufferedReader in;
@@ -31,7 +33,9 @@ public class MyValidator{
               return in;
        }
 
-
+       /** 
+       * Note: This function doesn't return until the user enters a valid input!
+       */
        public int getInteger(int lb, int ub) throws IOException{
               
               while(true){

@@ -2,6 +2,10 @@ package main.util;
 
 import java.util.Scanner;
 
+/**
+ * A utility class that defines several functions for reading inputs of various data types from the system.
+ * The functions are written such that the inputs are validated (hence, the class name) before they are returned.
+ */
 public class Validator
 {
     public static String getString(String prompt)

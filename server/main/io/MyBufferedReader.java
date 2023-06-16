@@ -4,7 +4,15 @@ import main.exceptions.OutOfBoundsException;
 
 import java.io.*;
 
-
+/**
+ * My custom {@code BufferedReader} that defines a {@code getInt()} such that
+ * the input integer is within the bounds specified: [lower bound ({@code lb}), upper bound ({@code ub})].
+ * <p>
+ * <b>Note</b>:
+ * This class is required only on the server end. The client passes to the server whatever message it reads from the system.
+ * It doesn't need to any checking for the validity of the input. The server needs to do that.
+ * </p>
+ */
 public class MyBufferedReader extends BufferedReader{
 
 
@@ -24,6 +32,3 @@ public class MyBufferedReader extends BufferedReader{
        }
        
 }
-
-
-              

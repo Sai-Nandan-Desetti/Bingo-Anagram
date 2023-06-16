@@ -21,7 +21,16 @@ public class ServerThread extends Thread{
               this.socket = socket;
        }
 
- 
+       /**
+         <ul>
+             <li>This method is automatically invoked when an object of ServerThread invokes start().
+             <li>Each ServerThread interacts with an individual client, and, therefore, has the responsibility of
+                  <ol>
+                     <li>offering the services to the client, and
+                     <li>invoking the respective functions based on the client's choice.
+                  </ol>
+          </ul>
+        */
        public void run(){
 
               try{
@@ -38,7 +47,7 @@ public class ServerThread extends Thread{
                        switch(new MyValidator(fromClient,toClient).getInteger(1,2)){
             
                            case 1:  PlayBingo.play(fromClient,toClient);
-                                     break;
+                                    break;
 
                            case 2:  try{
                                         UseDictionary.use(fromClient,toClient);
